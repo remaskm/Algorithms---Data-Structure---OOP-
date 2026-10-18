@@ -170,5 +170,3 @@ g++ -std=c++17 main.cpp -o hospital && ./hospital
 ```
 
 > **Before you run:** `main.cpp` writes its report to a hard-coded Windows path (`C:\Users\samaa\OneDrive\Desktop\...\doctors.txt`). Change the `ofstream` path near the top of `main()` to a location on your machine, or the program will print "Failed to open the file!" and exit.
->
-> **Known issue:** the `Surgeon` constructor takes `(id, name, ...)` while `main.cpp` passes `(name, id, ...)`, so the two values are swapped in the surgeon's output. Fixing the argument order in one of the two places resolves it.
